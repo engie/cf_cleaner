@@ -57,7 +57,6 @@ if __name__ == '__main__':
     print(f"Found the following {len(records)} records:")
     for r in records:
         print(f"{r['type']}: {r['name']}")
-    sys.exit(0)
     if input("Type domain name to remove all records: ") != args.domain:
         sys.exit(0)
     print('Removing DNS records')
